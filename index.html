@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Base 10 Converter</title>
+    </head>
+    <header>
+        <a>Base 10 to Spider Converter</a>
+    </header>
+    <body>
+        <div class="container">
+            <textarea class="padded-input" oninput="onType(this)"></textarea>
+            <div class="arrow">&rarr; </div>
+            <img id="img" class="responsive-image">
+        </div>
+    </body>
+    <style>
+        body {
+            padding: 50;
+            background-color: #505050;
+            text-align: center;
+        }
+        header {
+            font-size: 40px;
+            font-family: sans-serif;
+            font: bold;
+            border-bottom: 2px solid #000000;
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .padded-input {
+            padding: 10px; /* Adds padding around the content */
+            width: 200px;
+            height: 200px;
+            font-size: 16px;
+            line-height: 1;
+            resize: none;
+        }
+
+        .responsive-image {
+            width: 200px; /* Makes the image responsive */
+            height: 200px;    /* Keeps the aspect ratio */
+            border: 2px solid #ccc; /* Optional border */
+            padding: 10px;
+        }
+
+        .arrow {
+            margin: 0 10px;
+            font-size: 50px;
+            line-height: 1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center; /* Align items vertically in the center */
+            justify-content: center; /* Center the items horizontally */
+        }
+    </style>
+    <script src="app.js"></script>
+</html>
